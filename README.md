@@ -14,21 +14,19 @@ A simple SAPUI5 Todo application demonstrating data binding, routing, and UI5 be
 
 ---
 
-## Project Structure
-├── package-lock.json
-├── package.json
-└── webapp/
-    ├── index.html
-    ├── mytodo/
-    │   ├── Component.js
-    │   ├── controller/
-    │   │   ├── App.controller.js
-    │   │   ├── Detail.controller.js
-    │   │   └── Home.controller.js
-    │   ├── Index.js
-    │   ├── manifest.json
-    │   └── view/
-    │       ├── App.view.xml
-    │       ├── Detail.view.xml
-    │       └── Home.view.xml
-    └── ui5.yaml
+# Project Structure
+
+```plaintext
+mytodo/
+├── Component.js
+├── manifest.json
+├── controller/
+│   ├── App.controller.js
+│   ├── Home.controller.js
+│   └── Detail.controller.js
+├── view/
+│   ├── App.view.xml
+│   ├── Home.view.xml
+│   └── Detail.view.xml
+index.html
+ui5.yaml
