@@ -4,6 +4,16 @@ A simple SAPUI5 Todo application demonstrating data binding, routing, and UI5 be
 
 ---
 
+## Features
+
+- Add, toggle, delete todo items
+- Routing between Home and Detail views
+- JSONModel based data binding
+- UI5 routing and navigation
+- UI5 standard controls like List, CheckBox, Button
+
+---
+
 ## Project Structure
 ├── package-lock.json
 ├── package.json
