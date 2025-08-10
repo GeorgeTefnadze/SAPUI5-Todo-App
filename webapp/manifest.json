@@ -1,0 +1,49 @@
+{
+  "_version": "1.32.0",
+  "sap.app": {
+    "id": "mytodo",
+    "type": "application",
+    "title": "My Todo UI5",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "mytodo.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "mytodo.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "async": true
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "Home",
+          "target": "Home"
+        },
+        {
+          "pattern": "detail/{todoIndex}",
+          "name": "Detail",
+          "target": "Detail"
+        }
+      ],
+      "targets": {
+        "Home": {
+          "viewName": "Home"
+        },
+        "Detail": {
+          "viewName": "Detail"
+        }
+      }
+    }
+  }
+}
