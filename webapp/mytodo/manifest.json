@@ -12,8 +12,8 @@
     "rootView": {
       "viewName": "mytodo.view.App",
       "type": "XML",
-      "async": true,
-      "id": "app"
+      "id": "app",
+      "async": true
     },
     "routing": {
       "config": {
@@ -28,20 +28,22 @@
         {
           "pattern": "",
           "name": "Home",
-          "target": "Home"
+          "target": "home"
         },
         {
           "pattern": "detail/{todoIndex}",
           "name": "Detail",
-          "target": "Detail"
+          "target": "detail"
         }
       ],
       "targets": {
-        "Home": {
-          "viewName": "Home"
+        "home": {
+          "viewName": "Home",
+          "viewLevel": 1
         },
-        "Detail": {
-          "viewName": "Detail"
+        "detail": {
+          "viewName": "Detail",
+          "viewLevel": 2
         }
       }
     }

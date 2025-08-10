@@ -13,7 +13,7 @@ sap.ui.define(
         };
 
         const oModel = new JSONModel(oData);
-        this.getView().setModel(oModel);
+        this.getView().getModel();
       },
 
       onAddTodo: function () {

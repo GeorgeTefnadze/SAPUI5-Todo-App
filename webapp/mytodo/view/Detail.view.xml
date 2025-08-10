@@ -1,0 +1,16 @@
+<mvc:View
+    controllerName="mytodo.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page
+        title="Todo Detail"
+        showNavButton="true"
+        navButtonPress=".onNavBack"
+    >
+        <content>
+            <Text text="{text}" />
+            <Text text="{= ${done} ? 'Completed' : 'Not completed'}" />
+        </content>
+    </Page>
+</mvc:View>

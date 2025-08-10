@@ -1,0 +1,43 @@
+<mvc:View
+    controllerName="mytodo.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page title="Home">
+        <Input
+            placeholder="write todo"
+            submit=".onAddTodo"
+            value="{/newTodoText}"
+        />
+        <HBox
+            alignItems="Center"
+            justifyContent="Center"
+        >
+            <Button
+                text="add"
+                press=".onAddTodo"
+            />
+            <Button
+                text="clear"
+                type="Reject"
+                press=".onClearTodo"
+                class="sapUiMediumMarginBegin"
+            />
+        </HBox>
+        <content>
+            <List
+                items="{
+                    path: '/todos'
+                }"
+                itemPress="onTodoPress"
+                mode="SingleSelectMaster"
+            >
+                <StandardListItem
+                    title="{text}"
+                    description="{= ${done} ? 'Done' : 'Pending'}"
+                    type="Active"
+                />
+            </List>
+        </content>
+    </Page>
+</mvc:View>
